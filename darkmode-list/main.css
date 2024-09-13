@@ -1,0 +1,37 @@
+
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+
+body{
+    padding: 5px;
+    background-color: var(--bg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--fontColor);
+}
+header{
+    text-align: center;
+    
+}
+
+.todo-list{
+    list-style: square;
+}
+
+.lightTheme{
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnColor: var(--black);
+}
+
+.darkTheme{
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnColor: var(--white);
+}
+
+.btn{
+    color: var(--btnColor);
+}
