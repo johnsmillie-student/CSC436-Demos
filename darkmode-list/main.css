@@ -7,7 +7,7 @@
 
 body{
     padding: 5px;
-    background-color: var(--bg);
+    background-color: var(--bg1);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--fontColor);
 }
@@ -20,18 +20,18 @@ header{
     list-style: square;
 }
 
-.lightTheme{
-    --bg: var(--white);
+.lightTheme1{
+    --bg1: var(--white);
     --fontColor: var(--black);
     --btnColor: var(--black);
 }
 
-.darkTheme{
-    --bg: var(--black);
+.darkTheme1{
+    --bg1: var(--black);
     --fontColor: var(--white);
     --btnColor: var(--white);
 }
 
-.btn{
+.mybtn{
     color: var(--btnColor);
 }
