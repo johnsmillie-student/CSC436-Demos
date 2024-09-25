@@ -9,7 +9,7 @@ function PostCard(){
     <Card style={{ width: '95%' }}>
       <Card.Body>
         <Card.Title>Post Title</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">User Name</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted"> </Card.Subtitle>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.

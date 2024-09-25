@@ -1,10 +1,18 @@
 import "../css/ResponsePara.css";
 
 
-function ResponsePara(){
+function ResponsePara({comments}){
+    const matchedComment = comments.map((para, index) => {
+        return (
+            <div>
+                <p>{para.content}</p>
+            </div>
+        );
+       
+    })
     return (
         <div>
-            <p>Response to Post</p>
+            {matchedComment}
         </div>
     );
 }
