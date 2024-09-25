@@ -11,9 +11,7 @@ function ResponsePara({comments}){
        
     })
     return (
-        <div>
-            {matchedComment}
-        </div>
+        matchedComment
     );
 }
 
