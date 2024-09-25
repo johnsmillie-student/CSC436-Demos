@@ -1,28 +1,54 @@
 
-
+import { ArrowUp,ArrowDown } from 'react-bootstrap-icons';
 import "../css/TopicPage.css";
 import Accordion from 'react-bootstrap/Accordion';
-//import PostCard from "../components/PostCard";
+import Card from 'react-bootstrap/Card';
 import ResponsePara from "../components/ResponsePara";
-import { Container } from "react-bootstrap";
+import { Container,Button } from "react-bootstrap";
 import posts from "../data/posts.json";
 import comments from "../data/comments.json";
+import ResponseCreatorButton from "../components/ResponseCreatorButton";
+
 function TopicPage(){
     return (
     <Container>
     <h3>Topic Title</h3>
-    <Accordion>
+    <br></br>
       {posts.map((post, index) => (
-        <Accordion.Item eventKey={index.toString()} key={index}>
-        <Accordion.Header >{post.title}</Accordion.Header>
-        <Accordion.Body>
-          {post.content}
-          <ResponsePara comments={comments.filter(comment => comment.postID === post.id)  }> 
-          </ResponsePara>
-        </Accordion.Body>
-      </Accordion.Item>
+        <div>
+          <Card style={{ width: '85rem' }}>
+             <Card.Body>
+               <Card.Title>{post.title}</Card.Title>
+               <Card.Subtitle className="mb-2 text-muted">OP: {post.id}</Card.Subtitle>
+               <Card.Text>
+                 {post.content}
+               </Card.Text>
+
+               <Button><ArrowUp></ArrowUp></Button>
+               {' '} {post.rating}{' '}
+               <Button><ArrowDown></ArrowDown></Button>{' '}
+               <ResponseCreatorButton/>
+               
+               <Accordion>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>Comments</Accordion.Header>
+                      <Accordion.Body>
+                      <ResponsePara comments={comments.filter(comment => comment.postID === post.id)  }> 
+                      </ResponsePara>
+                      </Accordion.Body>
+                  </Accordion.Item>
+               </Accordion>
+               
+             </Card.Body>
+         
+          </Card>
+       
+          
+  
+      <br></br>
+      </div>
       ))}
-    </Accordion>
+    
 
     </Container>
     );
