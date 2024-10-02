@@ -1,5 +1,5 @@
 
-import NavBar from "./components/NavBar";
+
 import {
     createBrowserRouter,
     RouterProvider,
@@ -28,7 +28,7 @@ function App() {
 
     return (
       <div className='app'>
-        <NavBar/>
+       
         <RouterProvider router={router} />
       </div>
     )
