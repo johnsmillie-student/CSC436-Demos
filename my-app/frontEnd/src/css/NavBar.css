@@ -1,0 +1,12 @@
+#myNav{
+  margin-bottom: 15px;
+  padding: 10px;
+  padding-bottom: 15px;
+  background-color: rgb(40, 40, 40); 
+  color: rgb(224, 224, 224);
+  font-size: 25px;
+  font-style: none;
+  border: none;
+  border-bottom-left-radius : 5px;
+  border-bottom-right-radius: 5px;
+}

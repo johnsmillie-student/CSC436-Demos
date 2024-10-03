@@ -3,12 +3,14 @@ import { Container } from "react-bootstrap";
 import ResponseCreatorButton from "./ResponseCreatorButton";
 
 function ResponsePara({comments}){
-    const matchedComment = comments.map((para, index) => {
+    const matchedComment = comments.map((comment, index) => {
         return (
 
             <Container>
-                <p>{para.content}</p>
-                <ResponseCreatorButton/>
+                <p>{comment.user}</p>
+                <p>{comment.content}</p>
+                {/*<ResponseCreatorButton/>*/}
+                <hr></hr>
             </Container>
         );
        
