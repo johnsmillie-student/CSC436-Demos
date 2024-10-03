@@ -1,0 +1,30 @@
+
+
+[
+  
+    {
+      "id": 0,
+      "user": "Alex G",
+      "postID": 0,
+      "content": "I like your title!!"
+    },
+    {
+      "id": 1,
+      "user": "John S",
+      "postID": 0,
+      "content": "I love your title!!"
+    },
+    {
+      "id": 2,
+      "user": "meemaw",
+      "postID": 1,
+      "content": "I lake your title!!"
+    },
+    {
+      "id": 3,
+      "user": "hads",
+      "postID": 2,
+      "content": "I laddle your title!!"
+    }
+  
+]

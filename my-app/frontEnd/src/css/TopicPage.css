@@ -1,0 +1,28 @@
+.badgeMargin{
+  margin-right:10px;
+}
+
+.badge{
+  border-radius: 10px;
+}
+
+#ratingArrow{
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(110, 58, 110);
+ 
+}
+
+#postCard{
+  background-color: rgb(40, 40, 40);
+  color: rgb(187, 187, 187);
+}
+
+#topicTitle{
+  color: rgb(239, 239, 239);
+}
+
+#comments{
+  background-color: rgb(219, 190, 190);
+}
