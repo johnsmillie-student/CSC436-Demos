@@ -14,10 +14,10 @@ function ResponseCreatorButton({addComment, postID}){
       e.preventDefault();
       console.log("IN save comment")
       const newComment = {
-      "id": Date.now(),
-      "user": e.target.userForm.value,
-      "postID": postID,
-      "content": e.target.contentForm.value
+        "id": Date.now(),
+        "user": e.target.userForm.value,
+        "postID": postID,
+        "content": e.target.contentForm.value
     };
     addComment(newComment);
     handleClose();
@@ -48,11 +48,8 @@ function ResponseCreatorButton({addComment, postID}){
             <Button  onClick={handleClose}>
               Close
             </Button>
-            
-            </Form>
+          </Form>
           </Modal.Body>
-          <Modal.Footer>
-          </Modal.Footer>
         </Modal>
         </span>
   
